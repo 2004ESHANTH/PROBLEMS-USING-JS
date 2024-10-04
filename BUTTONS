@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+      <button id="a" onclick="red()">RED</button>
+      <button id="b" onclick="blue()">BLUE</button>
+      <button id="c" onclick="green()">GREEN</button>
+      <button id="d" onclick="reset()">RESET</button>
+      <script>
+      let b1=document.getElementById("a")
+      let b2=document.getElementById("b")
+      let b3=document.getElementById("c")
+      let b4=document.getElementById("d")
+      function red(){
+        document.body.style.backgroundColor= 'red';
+        b1.style.backgroundColor= 'red';
+        b2.style.backgroundColor= 'white';
+        b3.style.backgroundColor= 'white';
+      }
+      function blue(){
+        document.body.style.backgroundColor= 'BLUE';
+        b1.style.backgroundColor= 'white';
+        b2.style.backgroundColor= 'blue';
+        b3.style.backgroundColor= 'white';
+      }
+      function green(){
+        document.body.style.backgroundColor = 'green';
+        b1.style.backgroundColor= 'white';
+        b2.style.backgroundColor= 'white';
+        b3.style.backgroundColor= 'green';
+      }
+      function reset(){
+        document.body.style.backgroundColor = 'white';
+        b1.style.backgroundColor= 'white';
+        b2.style.backgroundColor= 'white';
+        b3.style.backgroundColor= 'white';
+      }
+      </script>
+  </body>
+</html>
